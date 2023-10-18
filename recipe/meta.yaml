@@ -22,10 +22,10 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}              # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ compiler('cxx') }}            # [not win]
-    - {{ compiler('m2w64_cxx') }}      # [win]
+    - {{ compiler('c') }}          # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
+    - {{ compiler('cxx') }}        # [not win]
+    - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -34,25 +34,25 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-matrix
-    - r-rcpp
     - r-dplyr
     - r-lifecycle
+    - r-matrix
+    - r-rcpp
     - r-rlang
     - r-sf
-    - r-sp >=1.4_5
+    - r-sp >=1.6_1
     - r-tibble
     - r-withr
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-matrix
-    - r-rcpp
     - r-dplyr
     - r-lifecycle
+    - r-matrix
+    - r-rcpp
     - r-rlang
     - r-sf
-    - r-sp >=1.4_5
+    - r-sp >=1.6_1
     - r-tibble
     - r-withr
 
@@ -62,7 +62,8 @@ test:
     - "\"%R%\" -e \"library('fmesher')\""  # [win]
 
 about:
-  home: https://inlabru-org.github.io/fmesher/, https://github.com/inlabru-org/fmesher
+  home: https://inlabru-org.github.io/fmesher/
+  dev_url: https://github.com/inlabru-org/fmesher
   license: MPL-2.0
   summary: Generate planar and spherical triangle meshes, compute finite element calculations for 1- and 2-dimensional flat and curved manifolds with associated basis function spaces, methods for lines and polygons, and transparent handling of coordinate reference systems and coordinate transformation, including 'sf' and
     'sp' geometries. The core 'fmesher' library code was originally part of the 'INLA' package, and implements parts of "Triangulations and Applications" by Hjelle and Daehlen (2006) <doi:10.1007/3-540-33261-8>.
