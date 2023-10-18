@@ -3,11 +3,13 @@ About r-fmesher-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fmesher-feedstock/blob/main/LICENSE.txt)
 
-Home: https://inlabru-org.github.io/fmesher/, https://github.com/inlabru-org/fmesher
+Home: https://inlabru-org.github.io/fmesher/
 
 Package license: MPL-2.0
 
 Summary: Generate planar and spherical triangle meshes, compute finite element calculations for 1- and 2-dimensional flat and curved manifolds with associated basis function spaces, methods for lines and polygons, and transparent handling of coordinate reference systems and coordinate transformation, including 'sf' and 'sp' geometries. The core 'fmesher' library code was originally part of the 'INLA' package, and implements parts of "Triangulations and Applications" by Hjelle and Daehlen (2006) <doi:10.1007/3-540-33261-8>.
+
+Development: https://github.com/inlabru-org/fmesher
 
 Current build status
 ====================
