@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fmesher_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fmesher/fmesher_{{ version }}.tar.gz
-  sha256: ed5ddc18ddb1a4abfa61fe3f35e7310d459a19e992bd7a04875a2f2c1f54ba4e
+  sha256: 27b2231ee5f07a8b769f3b7f8e75a048b3c31bba4ba7b538753f03a985295b99
 
 build:
   merge_build_host: true  # [win]
