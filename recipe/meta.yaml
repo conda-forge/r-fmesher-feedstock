@@ -1,4 +1,4 @@
-{% set version = "0.1.7" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fmesher_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fmesher/fmesher_{{ version }}.tar.gz
-  sha256: b59af73ac4e30e5d4287fb6ddfc0b6e21b007243bd94a652f3725ea431019ecf
+  sha256: 2230b2c01b05ef61bc5ae7636bbbc792c04d43b345138d30e792a8dbbdc1979d
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
