@@ -37,24 +37,24 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-dplyr
-    - r-lifecycle
     - r-matrix
     - r-rcpp
+    - r-dplyr
+    - r-lifecycle
     - r-rlang
     - r-sf
-    - r-sp >=1.6_1
+    - r-splancs
     - r-tibble
     - r-withr
   run:
     - r-base
-    - r-dplyr
-    - r-lifecycle
     - r-matrix
     - r-rcpp
+    - r-dplyr
+    - r-lifecycle
     - r-rlang
     - r-sf
-    - r-sp >=1.6_1
+    - r-splancs
     - r-tibble
     - r-withr
 
