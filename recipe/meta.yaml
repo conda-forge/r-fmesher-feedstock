@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fmesher_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fmesher/fmesher_{{ version }}.tar.gz
-  sha256: 96237ff0ddd30826f97aa6a3940def65fce31dbd4026282264d38a116298a3e3
+  sha256: 6a1c4e69c5d2a235edcc3a613cb0cff0015ceee78b65c2d342bc05e12ff8a185
 
 build:
   number: 0
@@ -67,8 +67,8 @@ about:
   home: https://inlabru-org.github.io/fmesher/
   dev_url: https://github.com/inlabru-org/fmesher
   license: MPL-2.0
-  summary: Generate planar and spherical triangle meshes, compute finite element calculations for 1- and 2-dimensional flat and curved manifolds with associated basis function spaces, methods for lines and polygons, and transparent handling of coordinate reference systems and coordinate transformation, including 'sf' and
-    'sp' geometries. The core 'fmesher' library code was originally part of the 'INLA' package, and implements parts of "Triangulations and Applications" by Hjelle and Daehlen (2006) <doi:10.1007/3-540-33261-8>.
+  summary: Generate planar and spherical triangle meshes, compute finite element calculations for 1- and 2-dimensional flat and curved manifolds with associated basis function spaces, methods for lines and polygons, and transparent handling of coordinate reference systems and coordinate transformation, including 'sf' 
+    and 'sp' geometries. The core 'fmesher' library code was originally part of the 'INLA' package, and implements parts of "Triangulations and Applications" by Hjelle and Daehlen (2006) <doi:10.1007/3-540-33261-8>.
   license_family: OTHER
   license_file:
     - MPL-2.0.txt
